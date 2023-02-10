@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="SEIA - Sistema Escola de Integração Acadêmica oferece soluções completas para a gestão escolar.">
+    <meta name="keywords" content="SEIA, educação, gestão escolar, soluções">
+    <meta name="author" content="Equipe SEIA">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640779/logos/seia_logo_etwo84.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640779/logos/seia_logo_etwo84.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640779/logos/seia_logo_etwo84.svg">
+    <link rel="manifest" href="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640779/logos/seia_logo_etwo84.svg">
+    <link rel="mask-icon" href="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640779/logos/seia_logo_etwo84.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640779/logos/seia_logo_etwo84.svg">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640779/logos/seia_logo_etwo84.svg">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="padroes.css">
+    <link rel="stylesheet" href="dark-theme.css" id="dark-theme" disabled>
+    <link rel="stylesheet" href="index.css" id="light-theme">
+    
+    <link rel="stylesheet" href="https://res.cloudinary.com/dnjjcvwx5/raw/upload/v1675776364/assets/seia/css/Bootstrap%205.2.x/bootstrap522.min_fag1ma.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    
+    
+    
+
+    <title>SEIA - @yield('title')</title>
+
+
+
+</head>
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-light align-items-start sidebar sidebar-dark accordion p-0" id="sidebar">
+            <div class="container-fluid d-flex flex-column p-0">
+                <div class="top">
+                    <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                        <div class="sidebar-brand-icon mx-3 center">
+                            <img src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640779/logos/seia_logo_etwo84.svg" alt="Logo" class="w-50 logo-seia animated--fade-in"> 
+                        </div>
+                    </a>
+    
+                    <div class="d-flex info_perfil_nav gap-2 mt-3 mb-4 align-items-center p-0 center ">
+                        <img class="sidebar-brand-icon img-perfil animated--grow-in " src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640049/samples/people/boy-snow-hoodie.jpg" alt="imagem de perfil" srcset="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675701885/assets/seia/img/profiles/default/undraw_profile_zc6h9i.svg">
+                        <div class="d-flex flex-column   a-name ">
+                            <div class="name text-black a-name ">
+                                Jose Silva
+                            </div>
+                            <span class="info  text-dark text-capitalize a-name">
+                                Curso / turma
+                            </span>
+                        </div>
+                        <span>
+                            <button id="sidebarToggle" type="button"></i></button>
+                        </span>
+                    </div>
+    
+                    
+                        <hr class="sidebar-divider my-3 shadow-sm">
+                    
+                </div>
+
+                <ul class="navbar-nav center animated--fade-in" id="accordionSidebar">
+                    <span class="menu-title align-self-start">Menu</span>
+                    <li class="nav-item center"><a class="nav-link blue center" href="index.html"><i class="ph-house-fill icons-menu"></i></i><span class="a-name">Inicio</span></a></li>
+                    <li class="nav-item"><a class="nav-link green center" href="profile.html"><i class="ph-user-circle-fill icons-menu"></i></i><span class="a-name">Minhas Informações</span></a></li>
+                    <li class="nav-item"><a class="nav-link red center" href="table.html"><i class="ph-list-checks-fill icons-menu"></i></i><span class="a-name">Boletim</span></a></li>
+                    <li class="nav-item"><a class="nav-link yellow center" href="login.html"><i class="ph-book-bookmark icons-menu"></i></i><span class="a-name">Disciplinas</span></a></li>
+                    <li class="nav-item"><a class="nav-link blue center" href="register.html"><i class="ph-envelope icons-menu"></i></i><span class="a-name">Mensagens</span></a></li>
+                </ul>
+
+                <div class="exit">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <a class="nav-link d-flex justify-content-center align-items-center center" href="#">
+                            <i class="ph-sign-out icons-menu"></i>
+                            <span class="a-name">Sair</span>
+                        </a>
+
+                        <span class="copyright">SEIA 2023</span>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top" id="nav-content">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <div class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group">
+                                <div class="d-flex flex-column align-items-start">
+                                    <img src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640779/logos/seia_logo_etwo84.svg" alt="LogoDaEscola" height="12px">
+                                    <span class="">Nome da Escola</span>
+                                </div>    
+                            </div>
+                        </div>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-school"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <div class="me-auto navbar-search w-100">
+                                        <div class="d-flex flex-column align-items-start">
+                                            <img src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640779/logos/seia_logo_etwo84.svg" alt="LogoDaEscola" height="12px">
+                                            <span class="">Nome da Escola</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item no-arrow mx-1">
+                                <!--criar switch dark mode usando icones-->
+                                <div class="nav-item no-arrow">
+                                    <a class="nav-link" href="#" onclick="switchTheme()"><i class="fas fa-moon darkMode" ></i></a>
+                                </div>                   
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                        <h6 class="dropdown-header text-center">Notificações</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 12, 2019</span>
+                                                <p>A new monthly report is ready to download!</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 7, 2019</span>
+                                                <p>$290.29 has been deposited into your account!</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 2, 2019</span>
+                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                            </div>
+                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                        <h6 class="dropdown-header text-center">Mensagens</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640049/samples/people/boy-snow-hoodie.jpg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640049/samples/people/boy-snow-hoodie.jpg">
+                                                <div class="status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640049/samples/people/boy-snow-hoodie.jpg">
+                                                <div class="bg-warning status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640049/samples/people/boy-snow-hoodie.jpg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                            </div>
+                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Ver todas as mensagens </a>
+                                    </div>
+                                </div>
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+
+
+                <!--Conteudo-->
+                <main class="container">
+                    <!--@yield('content')-->
+                    
+
+                    <div class="avisos d-flex gap-3 justify-content-center align-items-center">
+                        <div class="text d-flex justify-content-center align-items-start flex-column">
+                            <h3 class="title">Seus dados</h3>
+                            <p class="fs-6">Caso encontre alguma informação errada vá a secretaria de sua escola!</p>
+                        </div>
+                        <img class="bookn" src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1676052403/assets/seia/img/book_nuvem_euwnog.svg">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card p-3 mt-5">
+                                <div class="dados-pessoais row green">
+                                    <div class="title col-12 mb-3">
+                                        Dados pessoais
+                                    </div>
+                                    <div class="col-md-3 col-sm-12">
+                                        <!--imagem do usuario-->
+                                        <img class="img-profile img-fluid w-50" src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675701885/assets/seia/img/profiles/default/undraw_profile_zc6h9i.svg">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <label for="name">Nome: </label>
+                                        <input type="text" name="name" id="name" value="Nome do aluno" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+        
+       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
