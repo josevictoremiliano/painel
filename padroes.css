@@ -348,6 +348,11 @@ main .card li a i{
     padding: 0.5em;
 }
 
+.boletim .badge{
+    color: white !important;
+    width: 100%;
+}
+
 /* Medias*/
 
 @media (max-width: 991px) {
@@ -417,7 +422,7 @@ main .card li a i{
     .observacao title{
         text-align: center !important;
     }
-    
+
 
     .dados-pessoais img{
         width: 9em !important;
