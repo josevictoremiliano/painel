@@ -201,3 +201,23 @@ main .card ul li a{
 main .card ul li a:hover{
     color: var(--seia-yellow) !important;
 }
+
+.dados-pessoais label,
+.filiacao label,
+.dados-endereco label,
+.responsaval label,
+.observacao label{
+    color: white !important;
+}
+
+.dados-pessoais input,
+.filiacao input,
+.dados-endereco input,
+.responsaval input{
+    background: var(--seia-darkback) !important;
+}
+
+.observacao textarea{
+    background: var(--seia-darkback) !important;
+    color: var(--seia-yellow);
+}
