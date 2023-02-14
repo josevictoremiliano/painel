@@ -16,6 +16,19 @@
     --seia-grey:#686868;
 
     --seia-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+
+    --seia-border-red: 1px solid var(--seia-red);
+    --seia-border-darkred: 1px solid var(--seia-darkred);
+    --seia-border-ambar: 1px solid var(--seia-ambar);
+    --seia-border-yellow: 1px solid var(--seia-yellow);
+    --seia-border-oceanblue: 1px solid var(--seia-oceanblue);
+    --seia-border-darkblue: 1px solid var(--seia-darkblue);
+    --seia-border-jeans: 1px solid var(--seia-jeans);
+    --seia-border-greenligth: 1px solid var(--seia-greenligth);
+    --seia-border-green: 1px solid var(--seia-green);
+    --seia-border-darkback: 1px solid var(--seia-darkback);
+    --seia-border-ligthgrey: 1px solid var(--seia-ligthgrey);
+    --seia-border-grey: 1px solid var(--seia-grey);
 }
 
 body, #content-wrapper{
@@ -27,6 +40,48 @@ body, #content-wrapper{
     background-color: white !important;
     font-family: 'Quicksand', sans-serif !important;
 }
+
+.seia-border-red{
+    border: var(--seia-border-red);
+}
+
+.seia-border-darkred{
+    border: var(--seia-border-darkred);
+}
+
+.seia-border-ambar{
+    border: var(--seia-border-ambar);
+}
+
+.seia-border-yellow{
+    border: var(--seia-border-yellow);
+}
+
+.seia-border-oceanblue{
+    border: var(--seia-border-oceanblue);
+}
+
+.seia-border-darkblue{
+    border: var(--seia-border-darkblue);
+}
+
+.seia-border-jeans{
+    border: var(--seia-border-jeans);
+}
+
+.seia-border-greenligth{
+    border: var(--seia-border-greenligth);
+}
+
+.seia-border-green{
+    border: var(--seia-border-green);
+}
+
+.seia-border-darkback{
+    border: var(--seia-border-darkback);
+}
+
+
 
 #content-wrapper{
     background-color: transparent !important;
@@ -352,6 +407,66 @@ main .card li a i{
     color: white !important;
     width: 100%;
 }
+
+/* Disciplinas  */
+
+.disciplinas .seia-card{
+    box-shadow: var(--seia-shadow);
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+    max-height: 9.5em;
+}
+
+.disciplinas .seia-card .title{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 19px;
+    margin-bottom: 5px;
+    color: var(--seia-darkblue); 
+}
+
+.disciplinas .seia-card .horario{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--seia-darkblue) !important;
+}
+
+.disciplinas .seia-card .turma{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--seia-darkblue) !important;
+}
+
+.disciplinas .seia-card .professor{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--seia-darkblue) !important;
+}
+
+.disciplinas .seia-card .cod{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--seia-darkblue) !important;
+    margin-top: 2em !important;
+}
+
+.disciplinas .seia-card i{
+    font-size: 100px;
+    color: var(--seia-darkblue) !important;
+    margin: 0 !important;
+    display: block;
+    z-index: 1;
+    position: relative;
+    top: -90px;
+    left: 90px;
+}
+
+
 
 /* Medias*/
 

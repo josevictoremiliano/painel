@@ -231,3 +231,13 @@ main .card ul li a:hover{
     background: var(--seia-darkback) !important;
     color: white !important;
 }
+
+/* disciplinas */
+
+.disciplinas .seia-card .title,
+.disciplinas .seia-card .horario,
+.disciplinas .seia-card .cod,
+.disciplinas .seia-card .turma,
+.disciplinas .seia-card i{
+    color: white !important;
+}
