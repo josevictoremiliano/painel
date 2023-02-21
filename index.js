@@ -133,3 +133,64 @@ function switchTheme() {
         darkTheme.disabled = false;
     }
 }
+
+// seleciona todos os checkboxes
+const selectAll = document.getElementById('select-all');
+selectAll.addEventListener('change', function () {
+    const checkboxes = document.querySelectorAll('.checkbox');
+
+    for (let i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = this.checked;
+    }
+    updateHeaderButtons();
+});
+
+// seleciona todos os checkboxes ao tocar no botão "todos"
+$('#todos').on('click', function () {
+    $('input[type="checkbox"]').prop('checked', true);
+
+    updateHeaderButtons();
+});
+
+// marca somente os checkboxes com a classe "lidos"
+$('#read').on('click', function () {
+    $('.lido input[type="checkbox"]').prop('checked', true);
+
+    updateHeaderButtons();
+});
+
+// marca somente os checkboxes sem a  classe "lidos"
+$('#unread').on('click', function () {
+    $('.unread input[type="checkbox"]').prop('checked', true);
+
+    updateHeaderButtons();
+});
+
+// desmarca tudo
+$('#notSelect').on('click', function () {
+    $('input[type="checkbox"]').prop('checked', false);
+
+    updateHeaderButtons();
+});
+
+// atualiza os botões no cabeçalho
+const checkboxes = document.querySelectorAll('.checkbox');
+for (let i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].addEventListener('change', function () {
+        updateHeaderButtons();
+    });
+}
+
+// habilita/desabilita os botões no cabeçalho
+function updateHeaderButtons() {
+    const numChecked = $('.checkbox:checked').length;
+    const deleteBtn = $('#deleteBtn');
+    const markReadBtn = $('#markReadBtn');
+    if (numChecked > 0) {
+        deleteBtn.removeClass('d-none');
+        markReadBtn.removeClass('d-none');
+    } else {
+        deleteBtn.addClass('d-none');
+        markReadBtn.addClass('d-none');
+    }
+}

@@ -1,111 +1,134 @@
 <main class="container">
     <!--@yield('content')-->
-    
+
 
     <div class="avisos d-flex gap-3 justify-content-center align-items-center">
         <div class="text d-flex justify-content-center align-items-start flex-column">
             <h3 class="title">Disciplinas</h3>
-            <p class="fs-6"> A visualização a baixo esta organizada: Nome da disciplina, carga horaria, 
+            <p class="fs-6"> A visualização a baixo esta organizada: Nome da disciplina, carga horaria,
                 turma e código da disciplina</p>
         </div>
-        <img class="bookn" src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1676052403/assets/seia/img/book_nuvem_euwnog.svg" alt="livro com capa vermelha e quadro, apenas demostrativo">
+        <img class="bookn"
+            src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1676052403/assets/seia/img/book_nuvem_euwnog.svg"
+            alt="livro com capa vermelha e quadro, apenas demostrativo">
     </div>
 
     <div class="row">
         <div class="col-sm-12 disciplinas">
-            <div class="card p-4 mt-1">
-                <div class="row d-flex gap-1 justify-content-center align-content-center">
-                    <div class="col-sm-4 col-md-4 col-lg-2 rounded-3 seia-border-darkblue seia-card">
-                        
-                        <div class="title">
-                            Lingua Portuguesa
+            <div class="card">
+                <div class="grid-container">
+                    <div class="card seia-border-red">
+                        <div class="card-body row">
+                          <div class="col-md-9">
+                            <div class="title">
+                              Língua Portuguesa
+                            </div>
+                            <div class="horario">
+                              60h
+                            </div>
+                            <div class="turma">
+                              2º ano B
+                            </div>
+                            <div class="cod">
+                              234567
+                            </div>
+                          </div>
+                          <div class="col-md-3 text-center">
+                            <i class="ph-bookmark"></i>
+                          </div>
                         </div>
-                        <div class="horario">
-                            80h
+                      </div>
+                    
+                    <div class="card seia-border-green">
+                        <div class="card-body row">
+                          <div class="col-md-9">
+                            <div class="title">
+                              Matemática
+                            </div>
+                            <div class="horario">
+                              60h
+                            </div>
+                            <div class="turma">
+                              2º ano B
+                            </div>
+                            <div class="cod">
+                              234567
+                            </div>
+                          </div>
+                          <div class="col-md-3 text-center">
+                            <i class="ph-calculator"></i>
+                          </div>
                         </div>
-                        <div class="turma">
-                            1º ano A
+                      </div>
+                      
+                      <div class="card seia-border-ambar">
+                        <div class="card-body row">
+                          <div class="col-md-9">
+                            <div class="title">
+                              Ciências
+                            </div>
+                            <div class="horario">
+                              40h
+                            </div>
+                            <div class="turma">
+                              3º ano A
+                            </div>
+                            <div class="cod">
+                              345678
+                            </div>
+                          </div>
+                          <div class="col-md-3 text-center">
+                            <i class="ph-flask"></i>
+                          </div>
                         </div>
-                        <div class="cod">
-                            123456
+                      </div>
+                      
+                      <div class="card seia-border-darkback">
+                        <div class="card-body row">
+                          <div class="col-md-9">
+                            <div class="title">
+                              Geografia
+                            </div>
+                            <div class="horario">
+                              50h
+                            </div>
+                            <div class="turma">
+                              2º ano A
+                            </div>
+                            <div class="cod">
+                              456789
+                            </div>
+                          </div>
+                          <div class="col-md-3 text-center">
+                            <i class="ph-globe"></i>
+                          </div>
                         </div>
-
-                        <i class="ph-books"></i>
-                    </div>
-
-                    <div class="col-sm-4 col-md-4 col-lg-2 rounded-3 seia-border-green seia-card">
-                        
-                        <div class="title">
-                            Matemática
+                      </div>
+                      
+                      <div class="card seia-border-greenligth">
+                        <div class="card-body row">
+                          <div class="col-md-9">
+                            <div class="title">
+                              História
+                            </div>
+                            <div class="horario">
+                              70h
+                            </div>
+                            <div class="turma">
+                              3º ano B
+                            </div>
+                            <div class="cod">
+                              567890
+                            </div>
+                          </div>
+                          <div class="col-md-3 text-center">
+                            <i class="ph-book"></i>
+                          </div>
                         </div>
-                        <div class="horario">
-                            80h
-                        </div>
-                        <div class="turma">
-                            1º ano A
-                        </div>
-                        <div class="cod">
-                            123456
-                        </div>
-
-                        <i class="ph-math-operations"></i>
-                    </div>
-
-                    <div class="col-sm-4 col-md-4 col-lg-2 rounded-3 seia-border-red seia-card">
-                        
-                        <div class="title">
-                            História
-                        </div>
-                        <div class="horario">
-                            80h
-                        </div>
-                        <div class="turma">
-                            1º ano A
-                        </div>
-                        <div class="cod">
-                            123456
-                        </div>
-
-                        <i class="ph-notepad"></i>
-                    </div>
-
-                    <div class="col-sm-4 col-md-4 col-lg-2 rounded-3 seia-border-yellow seia-card">
-                        
-                        <div class="title">
-                            Geografia
-                        </div>
-                        <div class="horario">
-                            80h
-                        </div>
-                        <div class="turma">
-                            1º ano A
-                        </div>
-                        <div class="cod">
-                            123456
-                        </div>
-
-                        <i class="ph-globe-hemisphere-west"></i>
-                    </div>
-
-                    <div class="col-sm-4 col-md-4 col-lg-2 rounded-3 seia-border-darkblue seia-card">
-                        
-                        <div class="title">
-                            Ciências
-                        </div>
-                        <div class="horario">
-                            80h
-                        </div>
-                        <div class="turma">
-                            1º ano A
-                        </div>
-                        <div class="cod">
-                            123456
-                        </div>
-
-                        <i class="ph-flask"></i>
-                    </div>
-
-                </div>                              
+                      </div>
+                      
+                </div>
+                  
             </div>
         </div>
     </div>
