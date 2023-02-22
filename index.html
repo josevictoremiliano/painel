@@ -26,9 +26,9 @@
         content="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640779/logos/seia_logo_etwo84.svg">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="padroes.css">
-    <link rel="stylesheet" href="dark-theme.css" id="dark-theme" disabled>
-    <link rel="stylesheet" href="index.css" id="light-theme">
+    <link rel="stylesheet" href="index.min.css">
+    <link rel="stylesheet" href="dark-theme.min.css" id="dark-theme" disabled>
+    <link rel="stylesheet" href="light-theme.css" id="light-theme">
 
     <link rel="stylesheet"
         href="https://res.cloudinary.com/dnjjcvwx5/raw/upload/v1675776364/assets/seia/css/Bootstrap%205.2.x/bootstrap522.min_fag1ma.css">
@@ -70,7 +70,7 @@
                             </span>
                         </div>
                         <span>
-                            <button id="sidebarToggle" type="button"></i></button>
+                            <button id="sidebarToggle" type="button" aria-label="Sidebar abrir/fechar"></i></button>
                         </span>
                     </div>
 
@@ -113,8 +113,8 @@
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top" id="nav-content">
-                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3"
-                            id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                    <div class="container-fluid">
+                        <button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button" aria-label="Fechar/Abrir sidebar"><i class="fas fa-bars"></i></button>
                         <div class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
                             <div class="input-group">
                                 <div class="d-flex flex-column align-items-start">
@@ -125,9 +125,10 @@
                             </div>
                         </div>
                         <ul class="navbar-nav flex-nowrap ms-auto">
-                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link"
-                                    aria-expanded="false" data-bs-toggle="dropdown" href="#"><i
-                                        class="fas fa-school"></i></a>
+                            <li class="nav-item dropdown d-sm-none no-arrow">
+                                <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" aria-label="Escola">
+                                    <i class="fas fa-school"></i>
+                                </a>
                                 <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in"
                                     aria-labelledby="searchDropdown">
                                     <div class="me-auto navbar-search w-100">
@@ -143,15 +144,16 @@
                             <li class="nav-item no-arrow mx-1">
                                 <!--criar switch dark mode usando icones-->
                                 <div class="nav-item no-arrow">
-                                    <a class="nav-link" href="#" onclick="switchTheme()"><i
-                                            class="fas fa-moon darkMode"></i></a>
+                                    <a class="nav-link" href="#" onclick="switchTheme()" aria-label="Trocar tema">
+                                        <i class="fas fa-moon darkMode"></i>
+                                    </a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
-                                        aria-expanded="false" data-bs-toggle="dropdown" href="#"><span
-                                            class="badge bg-danger badge-counter">3+</span><i
-                                            class="fas fa-bell fa-fw"></i></a>
+                                <div class="nav-item dropdown no-arrow">
+                                    <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
+                                        <span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i>
+                                     </a>
                                     <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
                                         <h6 class="dropdown-header text-center">Notificações</h6><a
                                             class="dropdown-item d-flex align-items-center" href="#">
@@ -193,7 +195,8 @@
                                         <h6 class="dropdown-header text-center">Mensagens</h6><a
                                             class="dropdown-item d-flex align-items-center" href="#">
                                             <div class="dropdown-list-image me-3"><img class="rounded-circle"
-                                                    src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640049/samples/people/boy-snow-hoodie.jpg">
+                                                    src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640049/samples/people/boy-snow-hoodie.jpg"
+                                                    alt="foto1">
                                                 <div class="bg-success status-indicator"></div>
                                             </div>
                                             <div class="fw-bold">
@@ -203,7 +206,8 @@
                                             </div>
                                         </a><a class="dropdown-item d-flex align-items-center" href="#">
                                             <div class="dropdown-list-image me-3"><img class="rounded-circle"
-                                                    src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640049/samples/people/boy-snow-hoodie.jpg">
+                                                    src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640049/samples/people/boy-snow-hoodie.jpg"
+                                                    alt="foto2">
                                                 <div class="status-indicator"></div>
                                             </div>
                                             <div class="fw-bold">
@@ -213,7 +217,8 @@
                                             </div>
                                         </a><a class="dropdown-item d-flex align-items-center" href="#">
                                             <div class="dropdown-list-image me-3"><img class="rounded-circle"
-                                                    src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640049/samples/people/boy-snow-hoodie.jpg">
+                                                    src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640049/samples/people/boy-snow-hoodie.jpg"
+                                                    alt="foto3">
                                                 <div class="bg-warning status-indicator"></div>
                                             </div>
                                             <div class="fw-bold">
@@ -225,7 +230,8 @@
                                         </a><a class="dropdown-item d-flex align-items-center" href="#">
                                             <div class="dropdown-list-image me-3">
                                                 <img class="rounded-circle"
-                                                    src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640049/samples/people/boy-snow-hoodie.jpg">
+                                                    src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1675640049/samples/people/boy-snow-hoodie.jpg"
+                                                    alt="foto4">
                                                 <div class="bg-success status-indicator"></div>
                                             </div>
                                             <div class="fw-bold">
@@ -255,74 +261,95 @@
                     <div class="avisos d-flex gap-3 justify-content-center align-items-center">
                         <div class="text d-flex justify-content-center align-items-start flex-column">
                             <h3 class="title">Caixa de mensagens </h3>
-                            <p class="fs-6"> Mensagens encaminhadas por professores, diretoria ou secretaria apareceram aqui.</p>
+                            <p class="fs-6"> Mensagens encaminhadas por professores, diretoria ou secretaria apareceram
+                                aqui.</p>
                         </div>
                         <img class="bookn"
                             src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1676052403/assets/seia/img/book_nuvem_euwnog.svg"
                             alt="livro com capa vermelha e quadro, apenas demostrativo">
                     </div>
-                    
+
                     <div class="row">
                         <div class="col-sm-12 mensagens">
                             <div class="card">
                                 <nav>
                                     <!--Nova mensagem-->
                                     <div class="d-flex justify-content-end">
-                                        <button class="nav-link align-items-center d-flex gap-2" id="new" type="button"><i class="ph-trash"></i> Nova mensagem</button>
+                                        <button class="nav-link align-items-center d-flex gap-2" id="new"
+                                            type="button"><i class="ph-trash"></i> Nova mensagem</button>
                                     </div>
-                    
+
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                      <button class="nav-link active" id="nav-inbox-tab" data-bs-toggle="tab" data-bs-target="#nav-inbox" type="button" role="tab" aria-controls="nav-inbox" aria-selected="true"><i class="ph-tray"></i>Caixa de entrada</button>
-                                      <button class="nav-link" id="nav-sent-tab" data-bs-toggle="tab" data-bs-target="#nav-sent" type="button" role="tab" aria-controls="nav-sent" aria-selected="false"><i class="ph-paper-plane-tilt"></i> Enviados</button>
-                                      <button class="nav-link" id="nav-deleted-tab" data-bs-toggle="tab" data-bs-target="#nav-deleted" type="button" role="tab" aria-controls="nav-deleted" aria-selected="false"><i class="ph-trash"></i> Excluídos</button>
+                                        <button class="nav-link active" id="nav-inbox-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-inbox" type="button" role="tab"
+                                            aria-controls="nav-inbox" aria-selected="true"><i class="ph-tray"></i>Caixa
+                                            de entrada</button>
+                                        <button class="nav-link" id="nav-sent-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-sent" type="button" role="tab" aria-controls="nav-sent"
+                                            aria-selected="false"><i class="ph-paper-plane-tilt"></i> Enviados</button>
+                                        <button class="nav-link" id="nav-deleted-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-deleted" type="button" role="tab"
+                                            aria-controls="nav-deleted" aria-selected="false"><i class="ph-trash"></i>
+                                            Excluídos</button>
                                     </div>
-                    
+
                                     <!--select's e quantidade-->
                                     <div class="d-flex justify-content-between mt-2 seclectQuantidade">
                                         <div class="dropdown">
-                                            <input type="checkbox" name="Select" class="checkbox" id="select-all" placeholder="marcar tudo">
-                                            <button class="btn  btn-circle" type="button" id="selecionar" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Mais opções">
+                                            <input type="checkbox" name="Select" class="checkbox" id="select-all"
+                                                placeholder="marcar tudo">
+                                            <button class="btn  btn-circle" type="button" id="selecionar"
+                                                data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="Mais opções">
                                                 <i class="ph-caret-down"></i>
                                             </button>
                                             <ul class="dropdown-menu" aria-labelledby="selecionar">
-                                              <li><a class="dropdown-item" href="#" id="todos">Todos</a></li>
-                                              <li><a class="dropdown-item" href="#" id="notSelect">Nenhum</a></li>
-                                              <li><a class="dropdown-item" href="#" id="read">Lidas</a></li>
-                                              <li><a class="dropdown-item" href="#" id="unread">Não lidas</a></li>
+                                                <li><a class="dropdown-item" href="#" id="todos">Todos</a></li>
+                                                <li><a class="dropdown-item" href="#" id="notSelect">Nenhum</a></li>
+                                                <li><a class="dropdown-item" href="#" id="read">Lidas</a></li>
+                                                <li><a class="dropdown-item" href="#" id="unread">Não lidas</a></li>
                                             </ul>
-                                            <button class="btn btn-circle d-none" id="deleteBtn" aria-label="Deletar selecionados">
+                                            <button class="btn btn-circle d-none" id="deleteBtn"
+                                                aria-label="Deletar selecionados">
                                                 <i class="ph-trash"></i>
-                                              </button>
-                                              
-                                              <button class="btn btn-circle d-none" id="markReadBtn" aria-label="Marcar como lido">
+                                            </button>
+
+                                            <button class="btn btn-circle d-none" id="markReadBtn"
+                                                aria-label="Marcar como lido">
                                                 <i class="ph-envelope-open"></i>
-                                              </button>
+                                            </button>
                                         </div>
-                                       
-                                    
+
+
                                         <div class="view">
                                             <span>1-50 de 250</span>
-                                            <button class="btn btn-circle" aria-label="Anterior"><i class="ph-caret-left"></i></button>
-                                            <button class="btn btn-circle" aria-label="Próximo"><i class="ph-caret-right"></i></button>
+                                            <button class="btn btn-circle" aria-label="Anterior"><i
+                                                    class="ph-caret-left"></i></button>
+                                            <button class="btn btn-circle" aria-label="Próximo"><i
+                                                    class="ph-caret-right"></i></button>
                                         </div>
                                     </div>
-                    
-                    
-                    
-                                  </nav>
-                                  
-                                  <div class="tab-content pt-2" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-inbox" role="tabpanel" aria-labelledby="nav-inbox-tab">
+
+
+
+                                </nav>
+
+                                <div class="tab-content pt-2" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-inbox" role="tabpanel"
+                                        aria-labelledby="nav-inbox-tab">
                                         <a href="#" class="text-decoration-none unread">
                                             <div class="row justify-content-between d-flex align-items-center line">
                                                 <div class="col-sm-1">
-                                                    <input type="checkbox" name="Select" id="01" class="checkbox" placeholder="selecionar">
+                                                    <input type="checkbox" name="Select" id="01" class="checkbox"
+                                                        placeholder="selecionar">
                                                 </div>
                                                 <div class="col-sm-8 col-md-9 row mens">
                                                     <div class="col-sm-12 col-md-4">
-                                                        <span class="text-truncate d-block remetente">Nome do remetente</span>
+                                                        <span class="text-truncate d-block remetente">Nome do
+                                                            remetente</span>
                                                     </div>
-                                                    <div class="col-sm-12 col-md-8 d-flex align-items-center d-flex gap-1 mid">
+                                                    <div
+                                                        class="col-sm-12 col-md-8 d-flex align-items-center d-flex gap-1 mid">
                                                         <span class="text-truncate d-block assunto">
                                                             Novas Matriculas -
                                                         </span>
@@ -340,13 +367,16 @@
                                         <a href="#" class="text-decoration-none lido">
                                             <div class="row justify-content-between d-flex align-items-center line">
                                                 <div class="col-sm-1">
-                                                    <input type="checkbox" name="Select" id="02" class="checkbox" placeholder="selecionar">
+                                                    <input type="checkbox" name="Select" id="02" class="checkbox"
+                                                        placeholder="selecionar">
                                                 </div>
                                                 <div class="col-sm-8 col-md-9 row mens">
                                                     <div class="col-sm-12 col-md-4">
-                                                        <span class="text-truncate d-block remetente">Nome do remetente</span>
+                                                        <span class="text-truncate d-block remetente">Nome do
+                                                            remetente</span>
                                                     </div>
-                                                    <div class="col-sm-12 col-md-8 d-flex align-items-center d-flex gap-1 mid">
+                                                    <div
+                                                        class="col-sm-12 col-md-8 d-flex align-items-center d-flex gap-1 mid">
                                                         <span class="text-truncate d-block assunto">
                                                             Novas Matriculas -
                                                         </span>
@@ -362,10 +392,12 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="tab-pane fade" id="nav-sent" role="tabpanel" aria-labelledby="nav-sent-tab">Conteúdo dos emails enviados</div>
-                                    <div class="tab-pane fade" id="nav-deleted" role="tabpanel" aria-labelledby="nav-deleted-tab">Conteúdo dos emails excluídos</div>
-                                  </div>     
-                                                         
+                                    <div class="tab-pane fade" id="nav-sent" role="tabpanel"
+                                        aria-labelledby="nav-sent-tab">Conteúdo dos emails enviados</div>
+                                    <div class="tab-pane fade" id="nav-deleted" role="tabpanel"
+                                        aria-labelledby="nav-deleted-tab">Conteúdo dos emails excluídos</div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -377,8 +409,9 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="index.min.js"></script>
 
 </body>
 
