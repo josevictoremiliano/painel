@@ -1,0 +1,39 @@
+<main class="container">
+    <!--@yield('content')-->
+
+
+    <div class="avisos d-flex gap-3 justify-content-center align-items-center d-none">
+        <div class="text d-flex justify-content-center align-items-start flex-column">
+            <h3 class="title">Caixa de mensagens </h3>
+            <p class="fs-6"> Mensagens encaminhadas por professores, diretoria ou secretaria apareceram aqui.</p>
+        </div>
+    
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 send-mensagens">
+            <div class="card">
+                <div class="title">
+                    <h3>Enviar Mensagem</h3>
+                </div>
+                <form>
+                    <div class="form-group">
+                      <label for="para">Para:</label>
+                      <input type="email" class="form-control" id="para" />
+                    </div>
+                    <div class="form-group">
+                      <label for="assunto">Assunto:</label>
+                      <input type="text" class="form-control" id="assunto" />
+                    </div>
+                    <div class="form-group">
+                      <label for="mensagem">Mensagem:</label>
+                      <textarea class="form-control" id="mensagem" rows="5"></textarea>
+                    </div>
+                    <a href="#" class="btn btn-danger mt-2">Cancelar</a>
+                    <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+                  </form>
+            </div>
+            
+        </div>
+    </div>
+</main>

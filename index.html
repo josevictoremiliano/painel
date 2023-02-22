@@ -254,15 +254,14 @@
 
                     <div class="avisos d-flex gap-3 justify-content-center align-items-center">
                         <div class="text d-flex justify-content-center align-items-start flex-column">
-                            <h3 class="title">Disciplinas</h3>
-                            <p class="fs-6"> A visualização a baixo esta organizada: Nome da disciplina, carga horaria,
-                                turma e código da disciplina</p>
+                            <h3 class="title">Caixa de mensagens </h3>
+                            <p class="fs-6"> Mensagens encaminhadas por professores, diretoria ou secretaria apareceram aqui.</p>
                         </div>
                         <img class="bookn"
                             src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1676052403/assets/seia/img/book_nuvem_euwnog.svg"
                             alt="livro com capa vermelha e quadro, apenas demostrativo">
                     </div>
-
+                    
                     <div class="row">
                         <div class="col-sm-12 mensagens">
                             <div class="card">
@@ -271,18 +270,18 @@
                                     <div class="d-flex justify-content-end">
                                         <button class="nav-link align-items-center d-flex gap-2" id="new" type="button"><i class="ph-trash"></i> Nova mensagem</button>
                                     </div>
-
+                    
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                       <button class="nav-link active" id="nav-inbox-tab" data-bs-toggle="tab" data-bs-target="#nav-inbox" type="button" role="tab" aria-controls="nav-inbox" aria-selected="true"><i class="ph-tray"></i>Caixa de entrada</button>
                                       <button class="nav-link" id="nav-sent-tab" data-bs-toggle="tab" data-bs-target="#nav-sent" type="button" role="tab" aria-controls="nav-sent" aria-selected="false"><i class="ph-paper-plane-tilt"></i> Enviados</button>
                                       <button class="nav-link" id="nav-deleted-tab" data-bs-toggle="tab" data-bs-target="#nav-deleted" type="button" role="tab" aria-controls="nav-deleted" aria-selected="false"><i class="ph-trash"></i> Excluídos</button>
                                     </div>
-
+                    
                                     <!--select's e quantidade-->
                                     <div class="d-flex justify-content-between mt-2 seclectQuantidade">
                                         <div class="dropdown">
-                                            <input type="checkbox" name="Select" class="checkbox" id="select-all">
-                                            <button class="btn  btn-circle" type="button" id="selecionar" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <input type="checkbox" name="Select" class="checkbox" id="select-all" placeholder="marcar tudo">
+                                            <button class="btn  btn-circle" type="button" id="selecionar" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Mais opções">
                                                 <i class="ph-caret-down"></i>
                                             </button>
                                             <ul class="dropdown-menu" aria-labelledby="selecionar">
@@ -291,11 +290,11 @@
                                               <li><a class="dropdown-item" href="#" id="read">Lidas</a></li>
                                               <li><a class="dropdown-item" href="#" id="unread">Não lidas</a></li>
                                             </ul>
-                                            <button class="btn btn-circle d-none" id="deleteBtn">
+                                            <button class="btn btn-circle d-none" id="deleteBtn" aria-label="Deletar selecionados">
                                                 <i class="ph-trash"></i>
                                               </button>
                                               
-                                              <button class="btn btn-circle d-none" id="markReadBtn">
+                                              <button class="btn btn-circle d-none" id="markReadBtn" aria-label="Marcar como lido">
                                                 <i class="ph-envelope-open"></i>
                                               </button>
                                         </div>
@@ -303,13 +302,13 @@
                                     
                                         <div class="view">
                                             <span>1-50 de 250</span>
-                                            <button class="btn btn-circle"><i class="ph-caret-left"></i></button>
-                                            <button class="btn btn-circle"><i class="ph-caret-right"></i></button>
+                                            <button class="btn btn-circle" aria-label="Anterior"><i class="ph-caret-left"></i></button>
+                                            <button class="btn btn-circle" aria-label="Próximo"><i class="ph-caret-right"></i></button>
                                         </div>
                                     </div>
-
-
-
+                    
+                    
+                    
                                   </nav>
                                   
                                   <div class="tab-content pt-2" id="nav-tabContent">
@@ -317,7 +316,7 @@
                                         <a href="#" class="text-decoration-none unread">
                                             <div class="row justify-content-between d-flex align-items-center line">
                                                 <div class="col-sm-1">
-                                                    <input type="checkbox" name="Select" id="01" class="checkbox">
+                                                    <input type="checkbox" name="Select" id="01" class="checkbox" placeholder="selecionar">
                                                 </div>
                                                 <div class="col-sm-8 col-md-9 row mens">
                                                     <div class="col-sm-12 col-md-4">
@@ -341,7 +340,7 @@
                                         <a href="#" class="text-decoration-none lido">
                                             <div class="row justify-content-between d-flex align-items-center line">
                                                 <div class="col-sm-1">
-                                                    <input type="checkbox" name="Select" id="01" class="checkbox">
+                                                    <input type="checkbox" name="Select" id="02" class="checkbox" placeholder="selecionar">
                                                 </div>
                                                 <div class="col-sm-8 col-md-9 row mens">
                                                     <div class="col-sm-12 col-md-4">

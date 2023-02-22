@@ -425,7 +425,7 @@ main .card li a i{
 /* Mensagens */
 .mensagens .card{
     padding: 25px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .mensagens #new{
