@@ -427,6 +427,24 @@ main .card li a i{
     padding: 25px;
     height: 100vh;
 }
+
+.mensagens #new{
+    background: var(--seia-darkblue);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    transition: background 0.3s ease-in-out;
+    margin-bottom: 5px;
+}
+
+.mensagens #new:hover{
+    background: var(--seia-darkred);
+}
+
 #nav-inbox a .line{
     color: var(--seia-darkback) !important;
     text-decoration: none;
@@ -473,10 +491,9 @@ main .card li a i{
 
 .mensagens .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
     background: #FFFFFF !important;
-    border-bottom: 1px solid #0052B4 !important;
     border-radius: 0;
     height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+
     color: var(--seia-oceanblue) !important;
 }
 
@@ -486,14 +503,29 @@ main .card li a i{
     border-radius: 0;
     height: 50px;
     color: var(--seia-darkback) !important;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
 }
 
 .mensagens .nav-tabs .nav-link:hover{
-    background: #ebebeb !important;
+    background: var(--seia-darkblue) !important;
     border-bottom: 1px solid rgba(60, 64, 67, 0.3) !important;
     border-radius: 0;
     height: 50px;
-    color: var(--seia-darkback) !important;
+    color: white !important;
+}
+
+.mensagens .nav-tabs .nav-link i{
+    margin-right: 2px;
+    font-size: 15px;
+}
+
+.mensagens .nav-tabs .nav-link i:hover{
+    transition: transform 300ms ease-out;
+
 }
 
 .mensagens .btn-circle{
@@ -631,10 +663,20 @@ main .card li a i{
         width: 50%;
         text-align: center;
         font-size: 10pt;
+        justify-self: center;
+        align-items: center;
+        flex: content;
     }
 }
 
 @media  (max-width: 580px) {
+    .mensagens .seclectQuantidade{
+        flex-direction: column !important;
+    }
+
+    .mensagens .seclectQuantidade .view{
+        align-self: flex-end;
+    }
 
     .mensagens .card {
         height: 100vw;
@@ -644,6 +686,7 @@ main .card li a i{
         width: 100%;
         text-align: center;
         font-size: 10pt;
+        border: 1px solid rgba(60, 64, 67, 0.3) !important;
     }
 
     .mensagens  .col-sm-1 {

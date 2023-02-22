@@ -267,15 +267,19 @@
                         <div class="col-sm-12 mensagens">
                             <div class="card">
                                 <nav>
+                                    <!--Nova mensagem-->
+                                    <div class="d-flex justify-content-end">
+                                        <button class="nav-link align-items-center d-flex gap-2" id="new" type="button"><i class="ph-trash"></i> Nova mensagem</button>
+                                    </div>
 
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                      <button class="nav-link active" id="nav-inbox-tab" data-bs-toggle="tab" data-bs-target="#nav-inbox" type="button" role="tab" aria-controls="nav-inbox" aria-selected="true">Caixa de entrada</button>
-                                      <button class="nav-link" id="nav-sent-tab" data-bs-toggle="tab" data-bs-target="#nav-sent" type="button" role="tab" aria-controls="nav-sent" aria-selected="false">Enviados</button>
-                                      <button class="nav-link" id="nav-deleted-tab" data-bs-toggle="tab" data-bs-target="#nav-deleted" type="button" role="tab" aria-controls="nav-deleted" aria-selected="false">Excluídos</button>
+                                      <button class="nav-link active" id="nav-inbox-tab" data-bs-toggle="tab" data-bs-target="#nav-inbox" type="button" role="tab" aria-controls="nav-inbox" aria-selected="true"><i class="ph-tray"></i>Caixa de entrada</button>
+                                      <button class="nav-link" id="nav-sent-tab" data-bs-toggle="tab" data-bs-target="#nav-sent" type="button" role="tab" aria-controls="nav-sent" aria-selected="false"><i class="ph-paper-plane-tilt"></i> Enviados</button>
+                                      <button class="nav-link" id="nav-deleted-tab" data-bs-toggle="tab" data-bs-target="#nav-deleted" type="button" role="tab" aria-controls="nav-deleted" aria-selected="false"><i class="ph-trash"></i> Excluídos</button>
                                     </div>
 
                                     <!--select's e quantidade-->
-                                    <div class="d-flex justify-content-between mt-2">
+                                    <div class="d-flex justify-content-between mt-2 seclectQuantidade">
                                         <div class="dropdown">
                                             <input type="checkbox" name="Select" class="checkbox" id="select-all">
                                             <button class="btn  btn-circle" type="button" id="selecionar" data-bs-toggle="dropdown" aria-expanded="false">
