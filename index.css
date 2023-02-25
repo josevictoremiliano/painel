@@ -211,8 +211,6 @@ body, #content-wrapper{
 
 /* menu sair */
 .exit{
-    position: absolute;
-    bottom: 0;
     width: 100%;
     padding: 1em;
 }

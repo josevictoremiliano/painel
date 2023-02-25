@@ -1,3 +1,17 @@
+const lightTheme = document.getElementById("light-theme");
+const darkTheme = document.getElementById("dark-theme");
+const moonIcon = document.getElementById("moon-icon");
+const sunIcon = document.getElementById("sun-icon");
+const imgPerfil = document.querySelectorAll(".img-perfil");
+const logoSeia = document.querySelectorAll(".logo-seia");
+const aName = document.querySelectorAll(".a-name");
+const center = document.querySelectorAll(".center");
+const iconsM = document.querySelectorAll(".icons-menu");
+
+const caretLeft = document.getElementById('caret-left');
+const caretRight = document.getElementById('caret-right');
+
+
 (function () {
     "use strict"; // Start of use strict
 
@@ -7,6 +21,7 @@
     const center = document.querySelectorAll(".center");
     const logoSeia = document.querySelectorAll(".logo-seia");
     const imgPerfil = document.querySelectorAll(".img-perfil");
+    const btnSidebarToggle = document.getElementById('btnSidebarToggle');
     var sidebarToggles = document.querySelectorAll(
         "#sidebarToggle, #sidebarToggleTop"
     );
@@ -26,6 +41,18 @@
                 document.body.classList.toggle("sidebar-toggled");
                 sidebar.classList.toggle("toggled");
 
+                //troca ph-caret-left-bold por ph-caret-right-bold de btnSidebarToggle
+
+                if (sidebar.classList.contains("toggled")) {
+                    btnSidebarToggle.classList.remove("ph-caret-left-bold");
+                    btnSidebarToggle.classList.add("ph-caret-right-bold");
+                    btnSidebarToggle.classList.add("ps-1");
+                } else {
+                    btnSidebarToggle.classList.remove("ph-caret-right-bold");
+                    btnSidebarToggle.classList.remove("ps-1");
+                    btnSidebarToggle.classList.add("ph-caret-left-bold");
+                }
+
                 //Arruma imagem perfil se modo retraido ativo
                 imgPerfil.forEach((i) => {
                     i.classList.toggle("img-perfil-retraido");
@@ -42,11 +69,15 @@
                         l.classList.remove("w-50");
                         l.classList.add("logo-seia-retraido");
                     });
+
+                    localStorage.setItem('sidebar-toggled', 'sidebar-toggled')
                 } else {
                     logoSeia.forEach((l) => {
                         l.classList.add("w-50");
                         l.classList.remove("logo-seia-retraido");
                     });
+
+                    localStorage.removeItem('sidebar-toggled')
                 }
                 //Centraliza itens se modo retraido ativo
                 center.forEach((c) => {
@@ -118,21 +149,95 @@
     }
 })(); // End of use strict
 
-// TRocar tema
-
+// Trocar tema
 function switchTheme() {
-    const lightTheme = document.getElementById("light-theme");
-    const darkTheme = document.getElementById("dark-theme");
-    const navLight = document.querySelectorAll(".navbar-light");
-
     if (lightTheme.disabled) {
         lightTheme.disabled = false;
         darkTheme.disabled = true;
-    } else {
+        moonIcon.style.display = "block";
+        sunIcon.style.display = "none";
+        localStorage.setItem('light-theme', 'light-theme')
+        localStorage.removeItem('dark-theme')
+    }
+    else {
         lightTheme.disabled = true;
         darkTheme.disabled = false;
+        moonIcon.style.display = "none";
+        sunIcon.style.display = "block";
+        localStorage.setItem('dark-theme', 'dark-theme')
+        localStorage.removeItem('light-theme')
     }
 }
+
+//checar localstorage e mudar tema
+
+if (localStorage.getItem('light-theme') == 'light-theme') {
+    lightTheme.disabled = false;
+    darkTheme.disabled = true;
+    moonIcon.style.display = "block";
+    sunIcon.style.display = "none";
+}
+else {
+    lightTheme.disabled = true;
+    darkTheme.disabled = false;
+    moonIcon.style.display = "none";
+    sunIcon.style.display = "block";
+}
+
+
+//checar localstorage e mudar modo retraido
+
+
+
+if (localStorage.getItem('sidebar-toggled') == 'sidebar-toggled') {
+    document.body.classList.toggle("sidebar-toggled");
+    sidebar.classList.toggle("toggled");
+
+    if (sidebar.classList.contains("toggled")) {
+        btnSidebarToggle.classList.remove("ph-caret-left-bold");
+        btnSidebarToggle.classList.add("ph-caret-right-bold");
+        btnSidebarToggle.classList.add("ps-1");
+    } else {
+        btnSidebarToggle.classList.remove("ph-caret-right-bold");
+        btnSidebarToggle.classList.remove("ps-1");
+        btnSidebarToggle.classList.add("ph-caret-left-bold");
+    }
+    
+    //Arruma imagem perfil se modo retraido ativo
+    imgPerfil.forEach((i) => {
+        i.classList.toggle("img-perfil-retraido");
+    });
+
+    //Esconde nomes se modo retraido ativo
+    aName.forEach((a) => {
+        a.classList.toggle("d-none");
+    });
+
+    //verificar se toggled remover w-50 e colocar logo-seia-retraido
+    if (sidebar.classList.contains("toggled")) {
+        logoSeia.forEach((l) => {
+            l.classList.remove("w-50");
+            l.classList.add("logo-seia-retraido");
+        });
+    } else {
+        logoSeia.forEach((l) => {
+            l.classList.add("w-50");
+            l.classList.remove("logo-seia-retraido");
+        });
+    }
+    //Centraliza itens se modo retraido ativo
+    center.forEach((c) => {
+        c.classList.toggle("center-retraido");
+    });
+
+    //Centraliza icones se modo retraido ativo
+    iconsM.forEach((i) => {
+        i.classList.toggle("icons-menu-retraido");
+    });
+}
+
+
+
 
 // seleciona todos os checkboxes
 const selectAll = document.getElementById('select-all');

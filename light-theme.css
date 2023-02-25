@@ -53,16 +53,17 @@
     color: white !important;
 }
 
-#sidebarToggle::after{
-    content: ">";
+.sidebar #sidebarToggle::after{
+    content: "" !important;
     font-size: 1em;
-    font-weight: 900;
+    font-weight: bold;
+    font-family: "Phosphoricons" !important;
     transition: all 0.3s ease-in-out;
     color: var(--seia-oceanblue) !important;
 }
 
 #sidebarToggle:hover::after{
-    content: "<";
+    content: "" !important;
     color: white !important;
 }
 
