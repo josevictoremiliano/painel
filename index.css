@@ -169,6 +169,11 @@ body, #content-wrapper{
     margin-left: 0px !important;
 }
 
+.navbar-nav .center{
+    align-self: center !important;
+    margin-left: 0 !important;
+}
+
 /* active  navbar*/
 
 

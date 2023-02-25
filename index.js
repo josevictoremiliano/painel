@@ -21,6 +21,7 @@ const caretRight = document.getElementById('caret-right');
     const center = document.querySelectorAll(".center");
     const logoSeia = document.querySelectorAll(".logo-seia");
     const imgPerfil = document.querySelectorAll(".img-perfil");
+    const menutitle = document.querySelectorAll(".menu-title");
     const btnSidebarToggle = document.getElementById('btnSidebarToggle');
     var sidebarToggles = document.querySelectorAll(
         "#sidebarToggle, #sidebarToggleTop"
@@ -52,6 +53,12 @@ const caretRight = document.getElementById('caret-right');
                     btnSidebarToggle.classList.remove("ps-1");
                     btnSidebarToggle.classList.add("ph-caret-left-bold");
                 }
+
+                //adiciona center ao menu-title se modo retraido ativo
+                menutitle.forEach((m) => {
+                    m.classList.toggle("align-self-start")
+                    m.classList.toggle("center");
+                });
 
                 //Arruma imagem perfil se modo retraido ativo
                 imgPerfil.forEach((i) => {
