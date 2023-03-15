@@ -569,6 +569,34 @@ main .card li a i{
 /* Mensagens Lidas */
 
 
+/* turmas */
+.turmas .card{
+    min-height: 100vh !important;
+}
+.turmas a{
+    color: var(--seia-darkback) !important;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.turmas a:hover{
+    background-color: #ebebeb80;
+}
+
+.turmas .externo .card{
+    padding: 25px;
+    min-height: 100% !important;
+}
+
+.turmas .iconCodigoTurma i{
+    font-size: 100px;
+    color: #68686836;
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+
 /* Medias*/
 
 @media (max-width: 991px) {

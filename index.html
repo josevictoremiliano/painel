@@ -27,7 +27,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="dark-theme.min.css" id="dark-theme" disabled>
+    <link rel="stylesheet" href="dark-theme.css" id="dark-theme" disabled>
     <link rel="stylesheet" href="light-theme.css" id="light-theme">
 
     <link rel="stylesheet"
@@ -258,21 +258,50 @@
                 <!--Conteudo-->
                 <main class="container">
                     <!--@yield('content')-->
-
-                    <div class="card">
-
+                    <div class="avisos d-flex gap-3 justify-content-center align-items-center">
+                        <div class="text d-flex justify-content-between align-items-start flex-column gap-3">
+                            <h3 class="title">Turmas</h3>
+                            <p class="fs-6"> Aqui estão as turmas vinculadas a você.</p>
+                        </div>
+                        <img class="bookn"
+                            src="https://res.cloudinary.com/dnjjcvwx5/image/upload/v1676052403/assets/seia/img/book_nuvem_euwnog.svg"
+                            alt="livro com capa vermelha e quadro, apenas demostrativo">
                     </div>
                     
-                    <div class="card">
-                        
-                    </div>
-                    
-                    <div class="card">
-                        
-                    </div>
-                    
-                    <div class="card">
-                        
+                    <div class="row">
+                        <div class="col-sm-12 turmas">
+                            <div class="card externo">
+                                <a href="#" class="card text-decoration-none">
+                                    <div class="row">
+                                        <div class="text-start col-sm-12 col-md-10">
+                                            <div class="title">
+                                                <span class="text-info">5º ano B</span> <i class="ph ph-dot fs-1"></i> Matemática
+                                            </div>
+                                            <div class="periodo">
+                                                <p>Periodo: <span>matutino</span></p>
+                                            </div>
+                                            <div class="prof">
+                                               Professor: <span>João</span>
+                                            </div>
+                                            <div class="qAlunos">
+                                                Quantidade de alunos: <span>30</span>
+                                            </div>
+                                            <div class="sala">
+                                                Sala: <span>B325</span>
+                                            </div>
+                                        </div>
+                                        <div class="iconCodigoTurma col-sm-12 col-md-2">
+                                            <div class="icon">
+                                                <i class="ph-book-open"></i>
+                                            </div>
+                                            <div class="codMateria text-end">
+                                                <p>123456</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </main>
             </div>
