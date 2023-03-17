@@ -583,6 +583,13 @@ main .card li a i{
     background-color: #ebebeb80;
 }
 
+.turmas .periodo span,
+.turmas .prof span,
+.turmas .qAlunos span,
+.turmas .sala span{
+    font-weight: 700;
+}
+
 .turmas .externo .card{
     padding: 25px;
     min-height: 100% !important;
@@ -593,8 +600,8 @@ main .card li a i{
     color: #68686836;
     z-index: 0;
     position: absolute;
-    right: 0;
-    bottom: 0px;
+    right: 12px;
+    bottom: 4px;
 }
 
 /* Medias*/
@@ -697,6 +704,12 @@ main .card li a i{
         justify-self: center;
         align-items: center;
         flex: content;
+    }
+
+    .turmas .codMateria{
+        margin-top: 6px;
+        font-weight: 700;
+        text-align: start !important;
     }
 }
 

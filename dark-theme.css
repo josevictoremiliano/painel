@@ -365,6 +365,7 @@ main .card ul li a:hover{
 
 .turmas a{
     color: white !important;
+    border: 1px solid #ededed;
 }
 
 .turmas a:hover{
