@@ -604,6 +604,44 @@ main .card li a i{
     bottom: 4px;
 }
 
+.turmasDisplay .menu button { 
+    text-align: start !important;
+    width: 100% !important;
+    color: var(--seia-darkback);
+}
+
+.turmasDisplay .menu button:hover{
+    background: #ebebeb !important;
+    color: var(--seia-darkback) !important;
+}
+
+.turmasDisplay .menu .active{
+    background: var(--seia-darkblue) !important;
+    color: white !important;
+}
+
+.turmasDisplay .menu .blue:hover{
+    background: var(--seia-oceanblue) !important;
+    color: white !important;
+}
+
+.turmasDisplay .menu .red:hover{
+    background: var(--seia-red) !important;
+    color: white !important;
+}
+
+.turmasDisplay .menu .green:hover{
+    background: var(--seia-green) !important;
+    color: white !important;
+}
+
+.turmasDisplay .menu .yellow:hover{
+    background: var(--seia-yellow) !important;
+    color: white !important;
+}
+
+
+
 /* Medias*/
 
 @media (max-width: 991px) {
