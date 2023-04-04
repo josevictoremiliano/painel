@@ -375,3 +375,9 @@ main .card ul li a:hover{
 .turmas a i{
     color: rgba(255, 255, 255, 0.24) !important;
 }
+
+.turmasDisplay .menu button { 
+    background: var(--seia-darkback) !important;
+    box-shadow: var(--seia-shadow);
+    color: white !important;
+}
