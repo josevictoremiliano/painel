@@ -640,6 +640,10 @@ main .card li a i{
     color: white !important;
 }
 
+.turmasDisplay table {
+    color: var(--seia-darkback);
+}
+
 
 
 /* Medias*/
@@ -756,6 +760,7 @@ main .card li a i{
         justify-content: center !important;
         text-align: center;
     }
+
     .turmasDisplay .menu{
         flex-direction: row !important;
         justify-content: center!important;

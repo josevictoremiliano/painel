@@ -272,71 +272,166 @@
                         <div class="turmasDisplay">
                             <div class="d-flex  caixa">
                                 <div class="nav flex-column gap-1 align-items-start menu nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
-                                  <button class="nav-link active blue" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"> <i class="ph ph-users-four"></i> Meus alunos</button>
-                                  <button class="nav-link green" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="ph ph-list-checks"></i> Registro de faltas</button>
-                                  <button class="nav-link red" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dClasse" type="button" role="tab" aria-controls="v-pills-dClasse" aria-selected="false"><i class="ph ph-exam"></i> Diário de classe</button>
-                                  <button class="nav-link yellow" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="ph ph-paper-plane-tilt"></i> Mensagens</button>
-                                  <button class="nav-link green" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="ph ph-calendar"></i> Calendário</button>
+                                    <button class="nav-link active blue" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"> <i class="ph ph-users-four"></i> Meus alunos</button>
+                                    <button class="nav-link green" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="ph ph-list-checks"></i> Registro de faltas</button>
+                                    <button class="nav-link red" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dClasse" type="button" role="tab" aria-controls="v-pills-dClasse" aria-selected="false"><i class="ph ph-exam"></i> Diário de classe</button>
+                                    <button class="nav-link yellow" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="ph ph-paper-plane-tilt"></i> Mensagens</button>
+                                    <button class="nav-link green" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="ph ph-calendar"></i> Calendário</button>
                                 </div>
                     
-                                <div class="tab-content" id="v-pills-tabContent">
-                                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
-                                    <div class="card">
-                                        <div class="title">
-                                            Alunos
-                                        </div>
-                                        <hr class="w-100">
-                                        <div class="container">
-                                            <div class="row">
-                                              <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
-                                                <div class="card mb-3 text-center h-100">
-                                                  <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-                                                  <div class="card-body">
-                                                    <h5 class="title">Fulano de Tal</h5>
-                                                    <p class="card-text">123456</p>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
-                                                <div class="card mb-3 text-center h-100">
-                                                  <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-                                                  <div class="card-body">
-                                                    <h5 class="title">Beltrano de Tal</h5>
-                                                    <p class="card-text">789012</p>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
-                                                <div class="card mb-3 text-center h-100">
-                                                  <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-                                                  <div class="card-body">
-                                                    <h5 class="title">Ciclano de Tal</h5>
-                                                    <p class="card-text">345678</p>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
-                                                <div class="card mb-3 text-center h-100">
-                                                  <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-                                                  <div class="card-body">
-                                                    <h5 class="title">Ciclano de Tal</h5>
-                                                    <p class="card-text">345678</p>
-                                                  </div>
-                                                </div>
-                                              </div>
+                                <div class="tab-content w-100" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                                        <div class="card">
+                                            <div class="title">
+                                                Alunos
                                             </div>
-                                          </div>
-                                          
-                    
-                                    </div>
+                                            <hr class="w-100">
+                                            <div class="container">
+                                                <div class="row">
+                                                <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
+                                                    <div class="mb-3 text-center h-100">
+                                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="title">Fulano de Tal</h5>
+                                                        <p class="card-text">123456</p>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
+                                                    <div class="mb-3 text-center h-100">
+                                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="title">Beltrano de Tal</h5>
+                                                        <p class="card-text">789012</p>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
+                                                    <div class="mb-3 text-center h-100">
+                                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="title">Ciclano de Tal</h5>
+                                                        <p class="card-text">345678</p>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
+                                                    <div class="mb-3 text-center h-100">
+                                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="title">Ciclano de Tal</h5>
+                                                        <p class="card-text">345678</p>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
+                                                    <div class="mb-3 text-center h-100">
+                                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="title">Ciclano de Tal</h5>
+                                                        <p class="card-text">345678</p>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            
+                        
+                                        </div>
 
-                                  </div>
-                                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
-                                    <div class="card"></div>
-                                  </div>
-                                  <div class="tab-pane fade" id="v-pills-dClasse" role="tabpanel" aria-labelledby="v-pills-dClasse-tab" tabindex="0">...</div>
-                                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-                                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                                    </div>
+                                    <div class="tab-pane fade w-100" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                        <div class="card text-dark">
+                                            <div class="title text-center">
+                                                Registro de faltas
+                                            </div>
+                                            <hr class="w-100">
+                                            <div class="container">
+                                                <form action="#" class="mb-5">
+                                                    <div class="mb-3">
+                                                        <label for="temaAula" class="form-label">Tema da aula</label>
+                                                        <input type="email" class="form-control" id="temaAula" placeholder="Exemplo">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="quantasAulas" class="form-label">Quantas aulas?</label>
+                                                        <input type="number" class="form-control" id="quantasAulas" placeholder="2">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="data" class="form-label">Data</label>
+                                                        <input type="date" class="form-control" id="data">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="frequencia" class="form-label">Frequência</label>
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover table-bordered table-sm " id="frequencia">
+                                                            <thead>
+                                                                <tr>
+                                                                <th scope="col">nº</th>
+                                                                <th scope="col">Alunos</th>
+                                                                <th scope="col">P</th>
+                                                                <th scope="col">F</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>Janete vasconcelos de melo dias</td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                                    </div>
+                                                                </td>
+                                                                </tr>
+                                                                <tr>
+                                                                <th scope="row">2</th>
+                                                                <td>Carmen lucien da silva</td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                                    </div>
+                                                                </td>
+                                                                </tr>
+                                                                <tr>
+                                                                <th scope="row">3</th>
+                                                                <td>Otavio Vanderley de nunes</td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                                    </div>
+                                                                </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="observacoes" class="form-label">Observações</label>
+                                                        <textarea class="form-control" id="observacoes" rows="3" placeholder="Não é preciso informar caso não tenha"></textarea>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-success">Enviar</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-dClasse" role="tabpanel" aria-labelledby="v-pills-dClasse-tab" tabindex="0">...</div>
+                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
                                 </div>
                               </div>
                         </div>

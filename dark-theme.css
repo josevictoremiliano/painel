@@ -18,7 +18,6 @@ body{
     background-color: var(--seia-darkback) !important;
 }
 
- 
 #nav-content,
 .navbar-light,
 .navbar-light .navbar-nav,
@@ -379,5 +378,29 @@ main .card ul li a:hover{
 .turmasDisplay .menu button { 
     background: var(--seia-darkback) !important;
     box-shadow: var(--seia-shadow);
+    color: white !important;
+}
+
+.turmasDisplay input,
+.turmasDisplay select,
+.turmasDisplay textarea{
+    background: var(--seia-darkback) !important;
+    color: white !important;
+}
+
+.turmasDisplay table {
+    background: var(--seia-darkback) !important;
+    color: white !important;
+}
+
+.turmasDisplay input[type="radio"]:checked{
+    border: 1px solid var(--seia-yellow) !important;
+    background: var(--seia-ambar) !important;
+    color: white !important;
+}
+
+.turmasDisplay input[type="radio"]:not(:checked) {
+    border: 1px solid var(--seia-yellow) !important;
+    background: var(--seia-darkback) !important;
     color: white !important;
 }
