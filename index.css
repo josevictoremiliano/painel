@@ -644,6 +644,13 @@ main .card li a i{
     color: var(--seia-darkback);
 }
 
+/* diarios */
+
+.turmasDisplay .diarioSelect:hover{
+    background: #ebebeb !important;
+    color: var(--seia-darkback) !important;
+    transition: background 0.2s ease-in-out;
+}
 
 
 /* Medias*/
