@@ -307,12 +307,34 @@ function updateHeaderButtons() {
     }
 }
 
-//remove disabled dos inputs do form com id modalDiario
-function disabledFalse() {
-    var inputs = document.getElementById("modalDiario").getElementsByTagName("input");
+//remove disabled dos inputs do form com id modalDiario quando o btn com id disabledFalse é clicado, apos o btn DisabledFalse perde a classe d-none e oculta o disabledFalse usando js puro
+function removeDisabled() {
+    disTrue = document.getElementById("disabledTrue");
+    disFalse = document.getElementById("disabledFalse");
+    
+    disFalse.classList.add("d-none");
+    disTrue.classList.remove("d-none");
+
+    //inputs
+    var inputs = document.querySelectorAll('#modalDiario input');
     for (var i = 0; i < inputs.length; i++) {
-        //set disabled to false
-        inputs[i].disabled = false;
+        inputs[i].removeAttribute('disabled');
     }
-    console.log("disabled false")
 }
+
+function cancelDiarioAlterar() {
+    disTrue = document.getElementById("disabledTrue");
+    disFalse = document.getElementById("disabledFalse");
+
+    disFalse.classList.remove("d-none");
+    disTrue.classList.add("d-none");
+
+    //inputs
+    var inputs = document.querySelectorAll('#modalDiario input');
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].setAttribute('disabled', 'disabled');
+    }
+}
+
+
+
