@@ -306,3 +306,13 @@ function updateHeaderButtons() {
         markReadBtn.addClass('d-none');
     }
 }
+
+//remove disabled dos inputs do form com id modalDiario
+function disabledFalse() {
+    var inputs = document.getElementById("modalDiario").getElementsByTagName("input");
+    for (var i = 0; i < inputs.length; i++) {
+        //set disabled to false
+        inputs[i].disabled = false;
+    }
+    console.log("disabled false")
+}
