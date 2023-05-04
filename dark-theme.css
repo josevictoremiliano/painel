@@ -3,6 +3,10 @@ body{
     color: white !important; 
 }
 
+.text-dark-seia{
+    color: white !important;
+}
+
 .scroll-to-top{
     background-color: var(--seia-oceanblue) !important;
     color: white !important;

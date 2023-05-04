@@ -28,6 +28,10 @@ body, #content-wrapper{
     font-family: 'Quicksand', sans-serif !important;
 }
 
+.sidebar-dark #sidebarToggle::after {
+    display: none
+}
+
 .seia-border-red{
     border-color: var(--seia-red) !important;
 }
