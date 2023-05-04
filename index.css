@@ -652,6 +652,32 @@ main .card li a i{
     transition: background 0.2s ease-in-out;
 }
 
+.modal .modal-dialog .modal-content .modal-header{
+    background: var(--seia-darkblue) !important;
+    color: white !important;
+}
+
+.modal .modal-dialog .modal-content .modal-header .btn-close{
+    color: white !important;
+}
+
+.modal .modal-dialog .modal-content .modal-header .btn-close:hover{
+    color: #ebebeb !important;
+}
+
+.modal .modal-dialog .modal-content .modal-body{
+    background: #f0f0f0 !important;
+}
+
+.modal .modal-dialog .modal-content .modal-body .table{
+    color: var(--seia-darkback) !important;
+    background-color: #fff !important;
+    border-radius: 0.5em;
+}
+
+.modal .modal-dialog .modal-content .modal-body table{
+    padding: 1em;
+}
 
 /* Medias*/
 
